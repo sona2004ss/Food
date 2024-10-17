@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Food Print</title>
+    <style>
+        body {
+            background: url('food2.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 50px; /* Adjust this value to control the distance from the right edge */
+        }
+        .contact-form-container {
+            background-color: #fff;
+            border: 2px solid #d63384;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .contact-form-container table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+        .contact-form-container input, .contact-form-container textarea {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .contact-form-container textarea {
+            resize: vertical;
+        }
+        .contact-form-container input[type="submit"] {
+            background-color: #d63384;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form-container h1 {
+            color: #d63384;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .back-button {
+            display: block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .back-button a {
+            text-decoration: none;
+            color: #d63384;
+            font-size: 16px;
+            border: 1px solid #d63384;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .back-button a:hover {
+            background-color: #d63384;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form-container">
+        <div class="back-button">
+            <a href="index.html">Back to Home</a>
+        </div>
+        <h1>Contact Us</h1>
+        <form action="submit-contact.html" method="post">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="message" rows="5" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Send Message">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Table - Food Print</title>
+    <style>
+        body {
+            background: url('food2.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100vh;
+        }
+        .reservation-form-container {
+            background-color: #fff;
+            border: 2px solid #d63384;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            margin-right: 50px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .reservation-form-container table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+        .reservation-form-container input, .reservation-form-container select, .reservation-form-container textarea {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .reservation-form-container input[type="submit"] {
+            background-color: #d63384;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .reservation-form-container p {
+            text-align: center;
+            color: black;
+        }
+        .reservation-form-container a {
+            color: red;
+        }
+        .back-to-home {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-to-home a {
+            background-color: #d63384;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #d63384;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="reservation-form-container">
+        <h1>Book Your Table</h1>
+        <form action="submit-reservation.html" method="post"> 
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phonenumber">Phone Number:</label></td>
+                    <td><input type="tel" id="phonenumber" name="phonenumber" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="example@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date:</label></td>
+                    <td><input type="date" id="date" name="date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="guests">Number of guests:</label></td>
+                    <td><input type="number" id="guests" name="guests" required></td>
+                </tr>
+                <tr>
+                    <td><label for="time">Time:</label></td>
+                    <td><input type="time" id="time" name="time" required></td>
+                </tr>
+                <tr>
+                    <td><label for="table-type">Table Type:</label></td>
+                    <td>
+                        <select id="table-type" name="table-type">
+                            <option value="">Select your table</option>
+                            <option value="family-table">Family table</option>
+                            <option value="outdoor-table">Outdoor table</option>
+                            <option value="booth-table">Booth table</option>
+                            <option value="buffet-table">Buffet table</option>
+                            <option value="resin-table">Resin table</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="special-requests">Special Requests:</label><br>
+                        <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requests?"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit Reservation">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="back-to-home">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

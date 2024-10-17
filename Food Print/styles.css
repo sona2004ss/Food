@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    background-color: #d63384;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 100px 20px 20px;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* About Us Section Styles */
+.about-us {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    color: #d63384;
+    margin: 0;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Menu Preview Styles */
+.menu-preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.food-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 200px;
+    margin: 0 10px;
+}
+
+.food-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.food-item p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* CTA Section Styles */
+.cta {
+    text-align: center;
+    margin: 20px;
+}
+
+.cta-box {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #d63384;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #d63384;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c61c6f;
+}
